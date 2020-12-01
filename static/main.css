@@ -1,9 +1,9 @@
 
-/* body
+ body
 {
-color:black;
+color:white;
 font-size:normal;
 font-family: sans-serif;
 font-style: italic;
-
-} */
+background-color:rgba(0,0, 0, 0.5)
+} 
