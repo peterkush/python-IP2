@@ -4,20 +4,22 @@
     <span class="navbar-toggler-icon"><i>app-news</i>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 30px;width: auto;">
     <ul class="navbar-nav mr-auto list">
         <li class="nav-item active">
-        <a class="nav-link" href="#">ABC News<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">ABC News<span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('nbc') }}">Nbc News</a>
+         </li>
+         <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('fox') }}">Fox News</a>
+         </li>
         <li class="nav-item active">
         <a class="nav-link" href="{{ url_for('bbc') }}">BBC News</a>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="{{ url_for('fox') }}">Fox News</a>
-        </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="{{ url_for('nbc') }}">Nbc News</a>
-        </li>
+      
+       
     </ul>
     </div>
 
