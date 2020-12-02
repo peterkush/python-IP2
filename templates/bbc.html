@@ -18,7 +18,7 @@
 {% include 'navbar.html' %}
 {% endblock %}
 <hr>
-<div class="container mt-5" >
+<div class="container mt-5" style="color: green; font-family: sans-serif; font-size: 20px; font-style: italic;" >
             {%for new,des,i,url,publAt in context %}
     <div class="card m-3 p-3 shadow">
         <img src="{{i}}" class="img-fluid myimages">
@@ -26,7 +26,7 @@
         <h4>Description:</h4> {{des}}
         <h4>Publish At:</h4>"{{publAt}}"
         <div class="text-center">
-                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">Read More</a>
+        <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">Read More</a>
         </div>
     </div>
     {% endfor %}
